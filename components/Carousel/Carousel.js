@@ -4,7 +4,8 @@ class Carousel {
     this.leftButton = this.element.querySelector('.left-button');
     this.rightButton = this.element.querySelector('.right-button');
     this.images = this.element.querySelectorAll('.carousel-img');
-    this.images[0].style.display = 'flex';
+    this.position = 0;
+    this.images[this.position].style.display = 'flex';
     this.leftButton.addEventListener('click', () => {
         this.selectImg('left')
     })
@@ -16,10 +17,17 @@ class Carousel {
   }
   selectImg(direction) {
     if (direction === 'left') {
-
-
+      if(this.position === 0){
+        this.position = this.images.length - 1;
+      } else {
+        this.position--;
+      }
     } else {
-
+      if(this.position === this.images.length) {
+        this.position = 0;
+      } else {
+        this.position++;
+      }
     }
   }
 }
