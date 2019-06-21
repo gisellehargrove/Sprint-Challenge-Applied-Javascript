@@ -25,12 +25,13 @@ class TabLink {
      // if statement above. Convert each this.cards element into a new
      // instance of the TabCard class. Pass in a card object to the TabCard class.
 
-    // this.cards.map((element) => {
-    //   return new TabCard(element);
-    // });
-    // console.log(this.cards)
+    this.cards.map((element) => {
+      return new TabCard(element);
+    });
     // Add a click event that invokes this.selectTab
-    // this.tabElement.addEventListener('click');
+    this.tabElement.addEventListener('click', () => {
+      this.selectTab()
+    });
   }
 
   selectTab(){
