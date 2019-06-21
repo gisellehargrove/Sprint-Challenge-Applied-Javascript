@@ -1,15 +1,20 @@
 class Carousel {
   constructor(element) {
     this.element = element;
+    this.leftButton = this.element.querySelector('.left-button');
+    this.rightButton = this.element.querySelector('.right-button');
+    this.images = this.element.querySelectorAll('.carousel-img');
+
+    this.leftButton.addEventListener('click', => {
+      
+    })
+
   }
 }
 
 let carousel = document.querySelector('.carousel');
+new Carousel(carousel)
 
-let leftButton = document.querySelector('.left-button');
-let rightButton = document.querySelector('.right-button');
-
-let images = document.querySelectorAll('.carousel-img');
 
 
 /* If You've gotten this far, you're on your own! Although we will give you some hints:
