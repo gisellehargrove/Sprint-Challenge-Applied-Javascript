@@ -32,13 +32,25 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+    - The Dom is the "Document Object Model" that is created from your HTML and CSS by the browser to be able to
+      interact with your javascript.
+
 2. What is an event?
+
+    - An event is an action in the browser.
 
 3. What is an event listener?
 
+    - An event Listener is a function created to listen to specific events that are triggered in the
+     browser.
+
 4. Why would we convert a NodeList into an Array?
 
+    - Because arrays have a lot of helper methods to be able to manipulate them when NodeList do not.
+
 5. What is a component?
+
+    - A component is a reusable group of code made up of JavaScript, HTML, and CSS.
 
 ### Git Set up
 
