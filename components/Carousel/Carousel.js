@@ -16,17 +16,22 @@ class Carousel {
 
   }
   selectImg(direction) {
+    this.images[this.position].style.display = 'none';
     if (direction === 'left') {
       if(this.position === 0){
         this.position = this.images.length - 1;
+        this.images[this.position].style.display = 'flex';
       } else {
         this.position--;
+        this.images[this.position].style.display = 'flex';
       }
     } else {
       if(this.position === this.images.length) {
         this.position = 0;
+        this.images[this.position].style.display = 'flex';
       } else {
         this.position++;
+        this.images[this.position].style.display = 'flex';
       }
     }
   }
